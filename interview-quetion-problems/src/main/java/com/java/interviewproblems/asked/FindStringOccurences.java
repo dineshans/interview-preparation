@@ -1,4 +1,4 @@
-package com.java.interviewproblems;
+package com.java.interviewproblems.asked;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,7 +9,8 @@ public class FindStringOccurences {
 
     public static void main(String[] args) {
 
-        String str = "abshjsabababababbbaabbababsaast";
+        String str = "]" +
+                "";
         String outputStr= "ab";
        // stringCount(str, outputStr);
         getStringMatch(str, outputStr);

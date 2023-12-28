@@ -1,3 +1,5 @@
+================================= Interview Quetions =====================================================
+
 =========================== Core Java ==================================
 1)  How HashMap workes internally
 2) Java support for multiple inheritence ?
@@ -81,11 +83,11 @@ Design Patterns -->
 2) difference between trunc and delete
 
 3) types of index in Database
+4) How Store procedure is differ from Query ?
+			Store Procedure is more faster and performence is good for Store procedure 
+		1) Stored procedure will not compile again and again where simple Query compile every time then execute.
+		2) Stored procedure execute server side that's why it reduces network traffic. SQL query also executes on server also but if you have big query then it will take   more time comparison to Stored Procedure to traverse from client side to server.	
 
-
-====================================== Problem Solving ============================
-1) Find paires of elemen whose sum is equal to given sum ?
-2) 
 
 
 
@@ -104,8 +106,16 @@ Design Patterns -->
 9) difference between What is SOA and microservice architecture ?
 
 
+====================================== Problem Solving ============================
+1) Find paires of elemen whose sum is equal to given sum ?
+2) 
 
 
+
+
+
+
+====================================================================================================================================
 =========================== Notes =============================================
 
 ========================= Spring ==============================
@@ -592,6 +602,8 @@ Complexcity - In case of search, insertion and deletion -->
 								1) If all the key stores to differentdifferent bucket the - then search, insert and deletion -  O(1)
 								2) In the worst case, where all the entries go to the same bucket and the singly linked list stores these entries - O(N)
 								3) In a case where the threshold for converting this linked list to a self-balancing binary search tree - O(log(n))
-							
+			
+
+				
 
 

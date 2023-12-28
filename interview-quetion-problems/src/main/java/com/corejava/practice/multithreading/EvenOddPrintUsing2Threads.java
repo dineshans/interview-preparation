@@ -1,4 +1,4 @@
-package com.corejava.multithreading;
+package com.corejava.practice.multithreading;
 
 public class EvenOddPrintUsing2Threads implements Runnable {
     static int count = 1;

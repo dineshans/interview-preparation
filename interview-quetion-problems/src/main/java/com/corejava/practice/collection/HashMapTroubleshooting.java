@@ -1,6 +1,6 @@
-package com.corejava.collection;
+package com.corejava.practice.collection;
 
-import com.corejava.java8.realtime.problems.Student;
+import com.corejava.practice.java8.realtime.problems.Student;
 
 import java.util.HashMap;
 import java.util.Map;

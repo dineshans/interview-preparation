@@ -1,4 +1,4 @@
-package com.corejava.java8.realtime.problems;
+package com.corejava.practice.java8.realtime.problems;
 
 import java.util.ArrayList;
 import java.util.List;
