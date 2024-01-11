@@ -1,4 +1,4 @@
-package com.app.ocp.superhro;
+package com.app.design.patterns.SolidPrinciple.OCP;
 
 import java.util.List;
 

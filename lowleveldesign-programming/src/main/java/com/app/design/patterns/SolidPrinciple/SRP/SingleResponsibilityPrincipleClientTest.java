@@ -1,7 +1,7 @@
-package com.app.SRP;
+package com.app.design.patterns.SolidPrinciple.SRP;
 
 
-public class SingleResponsibilityPrinciple {
+public class SingleResponsibilityPrincipleClientTest {
 
     public static void main(String[] args) {
 

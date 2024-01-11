@@ -1,11 +1,11 @@
-package com.app.ocp.superhro;
+package com.app.design.patterns.SolidPrinciple.OCP;
 
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OpenCloseprinciple {
+public class OpenCloseprincipleClientTest {
 
 
 

@@ -1,6 +1,6 @@
 package com.app.design.patterns.builder;
 
-public class BuilderTest {
+public class BuilderClientTest {
 
     public static void main(String[] args) {
 

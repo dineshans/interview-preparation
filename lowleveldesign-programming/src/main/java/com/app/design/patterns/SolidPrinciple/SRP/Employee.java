@@ -1,4 +1,4 @@
-package com.app.SRP;
+package com.app.design.patterns.SolidPrinciple.SRP;
 
 public class Employee {
 
