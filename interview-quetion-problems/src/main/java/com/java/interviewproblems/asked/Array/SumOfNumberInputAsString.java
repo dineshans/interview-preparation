@@ -1,4 +1,4 @@
-package com.java.interviewproblems.asked;
+package com.java.interviewproblems.asked.Array;
 
 /* Write a function which adds two positive  integers , these Strings can be very long (length up to 100)
 

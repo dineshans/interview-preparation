@@ -1,4 +1,4 @@
-package com.java.interviewproblems.asked;
+package com.java.interviewproblems.asked.singletondesignpattern;
 
 public class SingletonClassExample {
 

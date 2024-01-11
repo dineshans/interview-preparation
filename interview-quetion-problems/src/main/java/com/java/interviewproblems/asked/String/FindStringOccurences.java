@@ -1,4 +1,4 @@
-package com.java.interviewproblems.asked;
+package com.java.interviewproblems.asked.String;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

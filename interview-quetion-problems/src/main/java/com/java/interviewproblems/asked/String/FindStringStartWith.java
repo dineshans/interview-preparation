@@ -1,4 +1,4 @@
-package com.java.interviewproblems.asked;
+package com.java.interviewproblems.asked.String;
 
 
 /* Find string start with do, in string array */
