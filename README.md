@@ -9,7 +9,7 @@
 
 ================================ JDK-8 =================================
 1) Funtional interface ?
-2) 
+2) JVM level changes in jdk-8 ?
 
 ======================================== Collection Framework =================================
 1) Insertion and reading which operation is good in HashSet and TreeSet
@@ -93,6 +93,7 @@ Design Patterns -->
 
 
 =========================== Company asked quetions ==========================
+
 ========================= LTI Mindtree ====================
 
 1) FInd count of male and female employee using jdk 8 based on the department
@@ -105,12 +106,59 @@ Design Patterns -->
 8) How you define OnetoMany and manytoOne ?
 9) difference between What is SOA and microservice architecture ?
 
+================ Global Logic - MR round =================
+
+1) What is invalidClass-exception 
+2) Design SMS notification system 
+3) CAP Thorem 
+4) How to configure Authentication and authorization / where to configure - Security
+5) One user can use one time credit card in a. month (So for an user - pmne transaction is allowed per User) - some microservices concept - retryAttempt
+6)  What else we can perfomr on API gateway level - 
+7) What is partitioning
+8) Docker run command 
+9) What basis you will choose MYSQL or noSQL db for your application
+
+
+============== Inspera ===========================
+1) A applicartion is work as scheduler which sent notificatiopn to user, so that applicartion we have deployed on 20 System - then it will send notification 20 times to same         user. so how can we restrict 
+2) Out of 10 setter how can you generate only 8 setter methods (if used Lombok )
+3) How to define more then one primary key using JPA entity ( @Embedded annotation )
+4) If any Rest End point having performence issue, then what would be the steps to figure it out.
+5) Write a program - one thread print even and one thread pring odd 
+6) Difference between @Autowired & @Bean Annotation
+7) What is use of Parallel Stream
+8) 
+
+
 
 ====================================== Problem Solving ============================
 
 1) Find paires of elemen whose sum is equal to given sum ?
 2) Write a function which adds two positive  integers , these Strings can be very long (length up to 100) ?
 		refer gitHub for solution - 
+			1) https://github.com/dineshans/interview-preparation/blob/main/interview-quetion-problems/src/main/java/com/java/interviewproblems/asked/Array/SumOfNumberInputAsString.java
+			2) https://github.com/dineshans/interview-preparation/blob/main/interview-quetion-problems/src/main/java/com/java/interviewproblems/asked/Array/SumOf2IntegerWithoutAnyRangeAsStringInput.java
+
+3) Devide an Array in chunks by given splitSize K ?
+	Solution - https://github.com/dineshans/interview-preparation/blob/main/interview-quetion-problems/src/main/java/com/java/interviewproblems/asked/Array/DevideArrayInChunksBygivenSplitSize.java
+
+4) Find String which start with String = "do" ?
+	Solution -> https://github.com/dineshans/interview-preparation/blob/main/interview-quetion-problems/src/main/java/com/java/interviewproblems/asked/String/FindStringStartWith.java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
