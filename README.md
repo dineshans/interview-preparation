@@ -107,8 +107,10 @@ Design Patterns -->
 
 
 ====================================== Problem Solving ============================
+
 1) Find paires of elemen whose sum is equal to given sum ?
-2) 
+2) Write a function which adds two positive  integers , these Strings can be very long (length up to 100) ?
+		refer gitHub for solution - 
 
 
 
