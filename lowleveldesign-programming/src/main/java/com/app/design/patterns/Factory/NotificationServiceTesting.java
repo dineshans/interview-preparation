@@ -1,6 +1,7 @@
 package com.app.design.patterns.Factory;
 
-public class NotificationService {
+
+public class NotificationServiceTesting {
 
     public static void main(String[] args) {
 
