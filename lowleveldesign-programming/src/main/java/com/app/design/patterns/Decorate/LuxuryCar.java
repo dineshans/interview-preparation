@@ -1,4 +1,4 @@
-package Decorate;
+package com.app.design.patterns.Decorate;
 
 public class LuxuryCar extends CarDecorator {
     public LuxuryCar(Car car) {

@@ -1,4 +1,4 @@
-package Decorate;
+package com.app.design.patterns.Decorate;
 
 public interface Car {
 
