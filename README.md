@@ -9,17 +9,13 @@
 6) What is Race Condition in multithreading ?
 7) Insertion and reading which operation is good in HashSet and TreeSet ?
 8) ArrayList and LinkedList difference & which can be good for reading ?
+9) Quetion related to Exception Handling, FInal, Finally, Finalize, Garbage Collectors, Shalow copy, deep Copy
 
 
 ================================ JDK-8 =================================
 1) Funtional interface ?
 2) JVM level changes in jdk-8 ?
 3) What is predate and consumer ?
-
-===============================================================================================
-
-1) How to configure load balancer ?
-
 
 ========================= Spring ==============================
 
@@ -157,13 +153,19 @@ Refere github for all problem solving - https://github.com/dineshans/interview-p
 10) Rotate Array by k position
 11) 
 
-Java 8 real time problems 
+-------------- Java 8 real time problems 
 
-Refere Here - 
+Refere Here - https://github.com/dineshans/interview-preparation/tree/main/interview-problems/src/main/java/corejava/practice/java8/realtime/problems
+			  https://github.com/dineshans/interview-preparation/tree/main/interview-problems/src/main/java/interview/problems/asked/java8/problems
 
 
 
+==================================== Design problems =======================
+1) Design a notification System
+2) Given datasource --> multiple customers data --> each customer --> 50 MB to 4 GB 
+			UI --> download --> customer report --> select -> 1 or all
 
+			Design the problem
 
 
 
