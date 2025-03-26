@@ -97,7 +97,7 @@ Design Patterns -->
 1) FInd count of male and female employee using jdk 8 based on the department
 2) Java is better java   --> find duplicate from string using java 8 
 3) circuitebreaker design pattern 
-4) crucicle algorithm
+4) Kruskal's algorithm
 5) Stratigic design patter 
 6) difference between --> qualifier and required annotation
 7) difference between --> prototype and session
