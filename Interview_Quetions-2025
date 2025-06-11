@@ -1,1 +1,70 @@
+============ Problems ===============
+
+-------------- String -----------------
+1) Given 3 string s1 = "hello dinesh"
+           string s2 = "hello dinesh ok"
+           string s3 = "hello dinesh not"
+
+           Find the common wsords in all 3-string
+
+
+
+     Map<String, Integer> map1 = getWordCount(s1.toLowerCase());
+        Map<String, Integer> map2 = getWordCount(s2.toLowerCase());
+        Map<String, Integer> map3 = getWordCount(s3.toLowerCase());
+
+        Set<String> commonWords = new HashSet<>(map1.keySet());
+        commonWords.retainAll(map2.keySet());
+        commonWords.retainAll(map3.keySet());
+
+        for (String word : commonWords) {
+            int minCount = Math.min(map1.get(word), Math.min(map2.get(word), map3.get(word)));
+            for (int i = 0; i < minCount; i++) {
+                System.out.println(word);
+            }
+        }
+    }
+
+    private static Map<String, Integer> getWordCount(String str) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String word : str.trim().split("\\s+")) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+        return map;
+    }
+
+
+
+2) Given a String find highest occurence character 
+   /*String s = "dineshsahusss";
+        //return character coming highest no of times
+        Map<Character, Integer> map = new LinkedHashMap<>();
+        char[] ch = s.toCharArray();
+        for (int i = 0; i < ch.length; i++) {
+            if (!map.containsKey(ch[i])) {
+                map.put(ch[i], 1);
+            } else {
+                map.put(ch[i], map.get(ch[i])+1);
+            }
+        }
+
+        int max = Integer.MIN_VALUE;
+        //Character ch1 = '';
+        for (int i = 0; i < ch.length; i++) {
+            int result = map.get(ch[i]);
+            if (result > max) {
+                max = map.get(ch[i]);
+            }
+        }
+
+
+------------ jdk- 8 proiblems ----------
+1) find max salary based on the department 
+2) find min salary based on the department
+3) given a list, find cube of even numbers 
+
+
+------------ SQL Queries --------------
+1) find third highest salary 
+2) find sum of salary based on department 
 
