@@ -130,11 +130,11 @@ select DISTINCT(salary) from employees order by salary DESC limit 2,1;
 1) Design Dashboard
 
 2) Design Banking application with below funtion implementation:
-1) Core Banking APp
-2) Accouint creation
-3) Deposites
-4) Withdrawals
-5) amount transfer to external bank
+	1) Core Banking APp
+	2) Accouint creation
+	3) Deposites
+	4) Withdrawals
+	5) amount transfer to external bank
 
 
 1) AccountComponent
