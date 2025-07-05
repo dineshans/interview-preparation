@@ -669,6 +669,73 @@ Complexcity - In case of search, insertion and deletion -->
 								3) In a case where the threshold for converting this linked list to a self-balancing binary search tree - O(log(n))
 			
 
+
+================= Design problems ================
+
+
+Design Banking application with below funtion implementation:
+
+1) Core Banking APp
+2) Accouint creation
+3) Deposites
+4) Withdrawals
+5) amount transfer to external bank
+
+
+
+1) AccountComponenet
+
+API Layer / Controller  --> AccountController
+Service Layer    --> AccountService & AccountServiceImpl
+Domain Layer    -->   Account, AccountType
+Persistence Layer --> Account Repository extends JpaRepository
+Database
+    --> MySQL / Oracle 
+		1)  accounts table
+				id, account_number, account_holder_name, account_type, balance, created_at, updated_at
+		2) transaction table (deposites, withdrawal, trasnfer logs)
+			id, transaction_type, acount, timestamp
+			from_account_id
+			to_account_id
+
+			foreign --> from_account_id reference account(id)
+			foreign key --> to_account_id reference account(id)
+
+
+		3) Users 
+			id, username,password_hash, email, role
+
+
+2) TransactionComponenet
+Controller  --> TransactionController
+Service Layer    --> TransactionService & TransactionServiceImpl
+Domain Layer    -->   Transaction, Transaction
+Persistence Layer --> TransactionRepository extends JpaRepository
+
+3) DTO -->
+	createAccountRequest, DepositeRequest
+	WithdrawalaRequest, TransferRequest
+	AccountResponse, TransactionResponse
+
+4) MapperLayer
+		AccountMapper, TransactionMapper
+
+Deposite:
+Client --> TransactionCotroller --> TransactionService --> validate account using AccountService --> updateBalance --> save transaction in DB
+
+Withdrawal --> 
+	Client --> TransactionCotroller --> TransactionService --> validate both account --> withdrawal from sender --> payment gateway -->  despoite into receiver --> log as transfer transaction
+
+
+@Transaction --> TransactionServiceImp
+
+
+
+Notificatio
+Audit logs
+API Security --> JWT / OAuth2.0
+Scheduler --> 
+
 				
 
 
