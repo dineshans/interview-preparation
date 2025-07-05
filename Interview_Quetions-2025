@@ -1,5 +1,19 @@
-============ Problems ===============
+============== Java quetions  ================
+1) @Primary & @Qualifier difference
+2) Difference between findAny() & findAnyMatch()
+3) Difference between filter & intercepter
 
+
+
+ditrubuted locking in microservices
+Transaction propogation & Isolation
+Symentric and Asymentric 
+Prototype and RequerstScop bean
+Can we use prototype scope in singleton scop in spring
+0 downtime deployment
+
+
+============ Problems ===============
 -------------- String -----------------
 1) Given 3 string s1 = "hello dinesh"
            string s2 = "hello dinesh ok"
@@ -7,7 +21,7 @@
 
            Find the common wsords in all 3-string
 
-
+Solution:
 
      Map<String, Integer> map1 = getWordCount(s1.toLowerCase());
         Map<String, Integer> map2 = getWordCount(s2.toLowerCase());
@@ -36,7 +50,10 @@
 
 
 2) Given a String find highest occurence character 
-   /*String s = "dineshsahusss";
+
+Solution:
+
+   String s = "dineshsahusss";
         //return character coming highest no of times
         Map<Character, Integer> map = new LinkedHashMap<>();
         char[] ch = s.toCharArray();
@@ -57,14 +74,54 @@
             }
         }
 
+------------- DS & Algo Problems ------------
+1) Group of Anagram
+2) sort the arrays ciontains 0,1,2
+
 
 ------------ jdk- 8 proiblems ----------
 1) find max salary based on the department 
 2) find min salary based on the department
-3) given a list, find cube of even numbers 
+3) Find average salary based on Gender
+4) given a list, find cube of even numbers 
+5) String[] strArr = {"Pen", "Eraser", "Note Book", "Pen", "Pencil", "Pen", "Note Book", "Pencil"}; need to epn which occures 3 times using jdk 8
 
 
 ------------ SQL Queries --------------
 1) find third highest salary 
 2) find sum of salary based on department 
+
+-- count employee based on department
+SELECT department, count(department) FROM Employees group by department;
+
+-- get average salary per department 
+SELECT department, avg(salary) from employees group by department;
+
+-- highest and lowest salary perdepartment
+SELECT department, max(salary), min(salary) from employees group by department;
+
+-- sum of salary in each department
+SELECT department, sum(salary) from employees group by department;
+
+-- order department by highest average salary
+select department, AVG(Salary)AS avrg_salary from employees 
+group by department
+ORDER BY avrg_salary DESC;
+
+-- find department with maximum no of employee
+SELECT department, count(*) AS totalCount from employees
+group By department
+ORDER BY totalCount DESC limit 1;
+
+-- find department with more then 3 employee
+-- also add average salary more then 57000
+SELECT department, avg(salary) AS average_salary, count(*) AS total_count from employees
+group by department HAVING total_count > 2 AND average_salary > 55000;
+
+-- find nth highest salary - 3rd highest then use 3 - using innner query
+select max(salary) from employees where salary < (select max(salary) from employees where salary < (select max(salary) from employees));
+
+-- using limit clause
+select DISTINCT(salary) from employees order by salary DESC limit 2,1;
+
 

@@ -18,7 +18,6 @@ public class PairSumMultipleOf24 {
                 }
             }
         }
-
         return result;
     }
 
