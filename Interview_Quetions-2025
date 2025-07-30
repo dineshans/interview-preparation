@@ -84,7 +84,7 @@ Solution:
 2) find min salary based on the department
 3) Find average salary based on Gender
 4) given a list, find cube of even numbers 
-5) String[] strArr = {"Pen", "Eraser", "Note Book", "Pen", "Pencil", "Pen", "Note Book", "Pencil"}; need to epn which occures 3 times using jdk 8
+5) String[] strArr = {"Pen", "Eraser", "Note Book", "Pen", "Pencil", "Pen", "Note Book", "Pencil"}; need to pen which occures 3 times using jdk 8
 
 
 ------------ SQL Queries --------------
