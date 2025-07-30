@@ -5,8 +5,8 @@
 
 
 
-ditrubuted locking in microservices
-Transaction propogation & Isolation
+Ditrubuted locking in microservices
+Transaction, propogation & Isolation
 Symentric and Asymentric 
 Prototype and RequerstScop bean
 Can we use prototype scope in singleton scop in spring
@@ -47,12 +47,8 @@ Solution:
         return map;
     }
 
-
-
 2) Given a String find highest occurence character 
-
 Solution:
-
    String s = "dineshsahusss";
         //return character coming highest no of times
         Map<Character, Integer> map = new LinkedHashMap<>();
@@ -84,8 +80,18 @@ Solution:
 2) find min salary based on the department
 3) Find average salary based on Gender
 4) given a list, find cube of even numbers 
-5) String[] strArr = {"Pen", "Eraser", "Note Book", "Pen", "Pencil", "Pen", "Note Book", "Pencil"}; need to pen which occures 3 times using jdk 8
-
+5) String[] strArr = {"Pen", "Eraser", "Note Book", "Pen", "Pencil", "Pen", "Note Book", "Pencil"}; 
+	need to pen which occures 3 times using jdk 8
+6) Reverse Words in String = "Welcome to Java 8 Stream"
+7) Convert List into map -
+	Scenario - 1) No duplicate - list -> {"Apple", "Banana", "Apricot"}
+	Scenario - 2) If Duplicates - list -> {"Apple", "Banana", "Apricot", "Apple"}
+8) Fiond first repeating character in String
+9) Given a list, find words or character occures more then 1 times 
+10) Given List find names start with A:
+	List<String> list = Arrays.asList("Raj", "Dinesh", "Ajay", "Aman");
+        Stream<String> stringStream = list.stream();
+        List<String> names = stringStream.filter(x -> x.startsWith("A")).toList();
 
 ------------ SQL Queries --------------
 1) find third highest salary 
@@ -123,8 +129,6 @@ select max(salary) from employees where salary < (select max(salary) from employ
 
 -- using limit clause
 select DISTINCT(salary) from employees order by salary DESC limit 2,1;
-
-
 
 ================= Design problems ================
 1) Design Dashboard
